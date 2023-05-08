@@ -25,7 +25,7 @@ export function Header(
         <Link to="/">
           <icons.Logo />
         </Link>{" "}
-        {isMyPage ? "My Meetings" : "Meet Me"}
+        {isMyPage ? "My Meetings" : "CalendarWise"}
       </div>
       <div>
         {user && isInMyPage && <UserAccountButton user={user} />}
@@ -61,12 +61,12 @@ function UserDropdown({ user }: { user: User }) {
         <span>{user.name}</span>
         <div className="flex items-center gap-1">
           <a className="text-blue-400" href={`/${user.slug}`} target="_blank">
-            meet-me.deno.dev/{user.slug}
+            calendarwise.net/{user.slug}
           </a>
           <IconLink href={`/${user.slug}`} target="_blank">
             <icons.ExternalLink />
           </IconLink>
-          <Copyable value={`https://meet-me.deno.dev/${user.slug}`} />
+          <Copyable value={`https://calendarwise.net/${user.slug}`} />
         </div>
       </div>
       <ul>

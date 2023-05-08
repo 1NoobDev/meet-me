@@ -54,7 +54,7 @@ export type EventType = {
   description?: string;
   duration: number;
   /** The slug is used as the last part of the booking page of this event type
-   * like `https://meet-me.deno.dev/[user-slug]/[event-type-slug]`.
+   * like `https://calendarwise.net/[user-slug]/[event-type-slug]`.
    */
   slug?: string;
 };
@@ -154,7 +154,7 @@ export async function saveUser(user: User): Promise<void> {
   await setDoc(doc(firestore(), "users", user.id), user);
 }
 
-/** Returns true if the user's settings are ready to start using Meet Me.
+/** Returns true if the user's settings are ready to start using CalendarWise.
  * This check is used for sending user to onboarding flow. */
 export function isUserReady(
   user: Omit<User, "googleRefreshToken"> | undefined,

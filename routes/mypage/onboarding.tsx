@@ -124,13 +124,13 @@ function ChooseURL(
     <>
       <div className="max-w-md mx-auto">
         <h1 className="text-lg">
-          Welcome to <span className="font-semibold">Meet Me</span>!
+          Welcome to <span className="font-semibold">CalendarWise</span>!
         </h1>
       </div>
 
       <div className="mt-8 flex flex-col gap-4 border rounded-lg border-neutral-700 py-8 px-8 max-w-lg mx-auto">
         <h2 className="font-medium text-lg">
-          Create your Meet Me URL{" "}
+          Create your CalendarWise URL{" "}
           <span className="ml-2 text-sm font-normal text-neutral-600">
             (step 1 of 3)
           </span>
@@ -140,7 +140,7 @@ function ChooseURL(
           Make it short and easy to remember so you can share links with ease.
         </p>
         <div className="flex items-center gap-2">
-          <span>https://meet-me.deno.dev/</span>
+          <span>https://calendarwise.net/</span>
           <input
             className="rounded-lg py-2 px-4 text-black"
             placeholder="url"
